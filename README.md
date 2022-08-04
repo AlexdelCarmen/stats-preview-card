@@ -38,7 +38,7 @@ Thanks for checking out this front-end coding challenge.
 
 ## My process
 
-I structured the HTML first, with a mobile layout first mindset, then styled it for mobile screens, and lastly, added a media query to handle desktop displays..
+I structured the HTML first, with a mobile layout first mindset, then styled it for mobile screens, and lastly, added a media query to handle desktop displays.
 
 ### Built with
 
@@ -50,25 +50,64 @@ I structured the HTML first, with a mobile layout first mindset, then styled it 
 
 ### What I learned
 
-Nothing super new, but good practice for Flexbox and basic CSS.
+A good second run to add a "filter" on an image.  
 
 ```css
-.payment-button {
-  padding: 1rem;
-  background-color: var(--accent-2);
-  font-size: var(--paragraph-text);
-  color: var(--neutral-1);
-  font-weight: 900;
-  border-radius: 15px;
-  border: 1px solid var(--accent-2);
-  box-shadow: 1px 10px 30px var(--neutral-2);
+@media (min-width: 1000px) {
+  .stats-container {
+    flex-direction: row-reverse;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 508px;
+    margin-top: 4px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .stats-card {
+    width: 50%;
+    padding: 4rem;
+    min-width: 500px;
+    max-width: 500px;
+    margin-top: 3px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+  }
+
+  .stats-title {
+    text-align: left;
+  }
+
+  .stats-text {
+    text-align: left;
+    padding: unset;
+  }
+
+  .stats-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .img-filter {
+    width: 508px;
+    margin-top: 4px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+  }
 }
 
-.payment-button:hover,
-.payment-button:active,
-.payment-button:focus {
-  opacity: 0.8;
-}
 
 ```
 
@@ -88,4 +127,4 @@ Still needing to get a better eye for sizes/colors.
 
 ## Acknowledgments
 
-Thanks Wendigon for ranting on the back for hours on end while I code.
+Thanks Wendigoon for ranting on the back for hours on end while I code.
