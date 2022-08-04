@@ -94,6 +94,7 @@ body {
   font-size: var(--para-size);
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .desktop-img {
@@ -106,4 +107,59 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1000px) {
+  .stats-container {
+    flex-direction: row-reverse;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 508px;
+    margin-top: 4px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .stats-card {
+    width: 50%;
+    padding: 4rem;
+    min-width: 500px;
+    max-width: 500px;
+    margin-top: 3px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+  }
+
+  .stats-title {
+    text-align: left;
+  }
+
+  .stats-text {
+    text-align: left;
+    padding: unset;
+  }
+
+  .stats-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .img-filter {
+    width: 508px;
+    margin-top: 4px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+  }
 }
