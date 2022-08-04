@@ -104,9 +104,10 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--light-3);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--light-2);
 }
 
 @media (min-width: 1000px) {
